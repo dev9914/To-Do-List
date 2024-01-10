@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #b60f46, #d592ff);
+  display: flex;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  height: 80vh;
+  background-color: white;
+  border-radius: 10px;
+  margin: 70px auto 20px;
+}
+.todo-app h2{
+    margin: 30px auto auto 20px;
+}
+.list-icon {
+    position: relative;
+    top: 4px;
+    height: 27px;
+    right: -4px;
+}
+
+.row {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  background: #cecfd0;
+  margin: 11px 20px 0 20px;
+  border-radius: 30px;
+  height: 35px;
+}
+.row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 17px;
+  padding-left: 15px;
+}
+.button{
+    width: 85px;
+  background-color: rgb(62, 198, 34);
+  border-radius: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 8px 12px 70px;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(image/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 35px;
+    
+}
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url(image/check.png);
+    background-size: 28px 28px;
+}
+ul li span{
+  position: absolute;
+  right: 37px;
+  bottom: 30px;
+  width: 40px;
+  height: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+ul li span:hover{
+  color: rgb(62, 198, 34);
+}
